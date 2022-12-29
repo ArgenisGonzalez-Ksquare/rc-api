@@ -15,7 +15,6 @@ app.listen(PORT, async () => {
         const sequelize = startSequelize(DB, PASSWD, HOST, USER);
                 await sequelize.sync(); 
                 console.info('DB and Express server is up and running!!!!')
-                console.info(process.env.ENVIRONMENT)
             } catch (error) {
                 console.error(error);
                 process.abort();
