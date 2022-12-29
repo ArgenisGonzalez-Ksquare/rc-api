@@ -3,8 +3,6 @@ dotenv.config();
 import { startSequelize  } from './models';
 import app from './app';
 
-
-
 const PORT = <string>process.env.PORT;
 const DB = <string>process.env.DB_NAME;
 const PASSWD = <string>process.env.DB_PASS;
